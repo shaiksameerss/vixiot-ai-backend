@@ -20,8 +20,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Check requirements file
+        run: cat requirements.txt
 
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v3
